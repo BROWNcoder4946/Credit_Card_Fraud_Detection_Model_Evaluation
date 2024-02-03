@@ -69,5 +69,12 @@ The evaluation results are stored in Pandas DataFrames (`recall_result_df` and `
 
 For reproducibility, a seed value of 42 is used throughout the code.
 
-## Results
+## Final Scores (Accuracy and Recall)
+
+![Accuracy Scores](assets/accuracy.png)
+
+![Recall Scores](assets/recall.png)
+
+## Conclusion
+
 After careful evaluation of both scores (accuracy and recall) for all the models , across all the different sampling techniques , we conclude that **Random Forest Classifier** and **XGBoost Classifier** when paired with **(S2)Random Over-Sampling** , **(S3)Under-Sampling using Tomek Links** ,  **(S4)Synthetic Minority Oversampling Technique (SMOTE)** prove to be absolute best models for classifying where output feature is highly imbalanced. The evaluation results are printed and saved as CSV files (`recall_result.csv` and `accuracy_result.csv`). 
